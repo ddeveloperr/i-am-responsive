@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Building Responsive Web Site Project. Responsive web site by example. Responsive web site without CSS frameworks. Open source...">
+<meta name="author" content="www.github.com/ddeveloperr">
+<meta name="keywords" content="HTML5,CSS3,@media query,Open source,Responsive">
+<meta name="author" content="Hege Refsnes">
+
+<!-- This start file was built by Paul Cheney  -->
+<title>Responsive Web Site: Project 9</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<!-- LOAD THE LATEST VERSION OF JQUERY-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+<!-- *************** LOAD THE GOOGLE FONT ****************** -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+
+
+
+<!-- *************** STYLE SHEETS ****************** -->
+<link href="css/screen.css" rel="stylesheet">
+
+
+<!-- *************** FAVORITE ICON ****************** -->
+   <link rel="icon" type="image/ico" href="favicon.ico"/>
+   <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+
+<!-- *************** SCRIPT TO MAKE THE MOBILE NAV EXPAND DOWN ****************** -->
+<script>
+	$(document).ready(function(){
+		$(".nav-button").click(function () {
+		$(".nav-button,.primary-nav").toggleClass("open");
+		});    
+	});
+</script>
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+     
+</head>
+<body>
+<div id="colorbar"></div><!-- end color bar -->
+
+<div id="headerWrapper">
+<header class="clearfix">
+	
+<hgroup>
+    <h1>Responsive Site - Project 9</h1>
+    <h2>Helping you start every project with Responsive look.</h2>
+</hgroup>
+	
+<a class="tel" tabindex="-1" href="tel:(800) 555-1234">(800) 555-1234</a>
+
+
+<ul class="social">
+    <li><a href="#"><span class="fa fa-facebook fa-fw"></span></a></li>
+    <li><a href="#"><span class="fa fa-pinterest fa-fw"></span></a></li>
+    <li><a href="#"><span class="fa fa-twitter fa-fw"></span></a></li>
+    <li><a href="#"><span class="fa  fa-google-plus fa-fw"></span></a></li>
+</ul>
+	
+</header>
+</div><!-- end of header wrapper -->  
+    
+    
+	
+<div id="navWrapper">
+<nav class="nav ">
+    <ul class="primary-nav clearfix">
+        <li class="selected"><a href="index.html">SPECIALS</a></li>
+        <li class="parent"><a href="flavors.html">FLAVORS</a>
+            <ul>
+            <li><a href="#">Strawberry</a></li>
+            <li><a href="#">Orange</a></li>
+            <li><a href="#">Lemon</a></li>
+            </ul>
+        </li>
+        <li><a href="schedule.html">SCHEDULE A PARTY</a></li>
+        <li><a href="store.html">CONTACT US</a></li>
+    </ul>
+
+<!-- phone nav button -->
+<button class="nav-button">Toggle Navigation</button>
+
+</nav>
+</div><!-- end of navigation wrapper -->  
+    
+<div id="contentWrapper">
+<div class="row">
+<div class="column-12">
+	<h1>SCHEDULE</h1>
+    <hr>
+</div><!-- end column -->
+<div class="column-9">
+
+    
+    <h2>Chepter 1 using h2</h2>
+    
+    
+    <p>I am paragraph and for now I'm using lipsum.pro: Massa natoque donec nisi suspendisse scelerisque a tellus vestibulum taciti a laoreet scelerisque mi class commodo in parturient ullamcorper tortor a ornare vestibulum gravida adipiscing nunc.Maecenas nulla parturient ullamcorper proin parturient a amet nisl diam sed sed maecenas urna...</p>
+    
+    
+    <ul class="disc">
+      <li>I'm a list item</li>
+      <li>I'm a list item</li>
+      <li>I'm a list item</li>
+    </ul>
+
+
+</div><!-- end column -->
+<div class="column-3 ">
+	<div class="color-1">
+    <p><strong>Regular price $19.00</strong></p>
+    <p><a href="#" class="buy" target="_blank" > Buy for $9.99</a></p>
+	</div>
+
+</div><!-- end column -->
+</div><!-- end row -->
+
+
+
+
+
+<div class="row">
+<div class="column-12">
+<h2>Chepter 2 using h2</h2>
+    
+    
+    <p>I am paragraph and for now I'm using lipsum.pro: Massa natoque donec nisi suspendisse scelerisque a tellus vestibulum taciti a laoreet scelerisque mi class commodo in parturient ullamcorper tortor a ornare vestibulum gravida adipiscing nunc.Maecenas nulla parturient ullamcorper proin parturient a amet nisl diam sed sed maecenas urna...</p>
+    
+<figure class="col4">
+<img src="photos/couple.jpg" alt="couple" >
+<figcaption>Simple image in the figcaption tag</figcaption>
+</figure>
+
+ <p>I am paragraph and for now I'm using lipsum.pro: Massa natoque donec nisi suspendisse scelerisque a tellus vestibulum taciti a laoreet scelerisque mi class commodo in parturient ullamcorper tortor a ornare vestibulum gravida adipiscing nunc.Maecenas nulla parturient ullamcorper proin parturient a amet nisl diam sed sed maecenas urna...</p>
+
+    <ul class="disc">
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+    </ul>
+
+
+
+
+</div><!-- end column -->
+</div><!-- end row -->
+
+
+
+<div class="row">
+<div class="column-12">
+	<h2>Note about Responsive web Project 9</h2>
+ 	<p>This sample page contains the following parts.</p>
+    <ul class="disc">
+      <li>Media Queries</li>
+      <li>Horizontal navigation</li>
+      <li>Two level deep navigation</li>
+      <li>Phone navigation</li>
+      <li>Multiple columns</li>
+      <li>Scalable images</li>
+      <li>Image sprites</li>
+      <li>Font based icons...</li>
+    </ul>
+    <p>In this project we combine all the CSS files into a single download following this <a href="http://webdesign.about.com/od/speed/qt/use-one-external-css-file.htm" target="_blank">speed up the page download</a>. </p>
+    </div><!-- end column -->
+</div><!-- end row -->
+
+</div><!-- end of content wrapper -->  
+    
+    
+    
+<div id="footerWrapper">
+    <footer>
+    <br />
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a>
+    <br />This work by <a cc="http://creativecommons.org/ns#" href="http://github.com/ddeveloperr/" target="_blank" property="cc:attributionName" rel="cc:attributionURL">github.com/ddeveloperr/</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-Noncommercial-Share Alike 4.0 Unported License</a>.<br/>
+    </footer>
+</div><!-- end of footer wrapper -->  
+
+       
+ 
+</body>
+</html>
